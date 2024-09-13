@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          fontFamily: "Raleway",
+          fontFamily: "Sans Serif",
           useMaterial3: true,
           primaryColor: const Color(0xFFE3712E),
           primaryColorDark: const Color(0xFF212121),
