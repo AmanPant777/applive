@@ -16,12 +16,18 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           fontFamily: "Sans Serif",
           useMaterial3: true,
+          elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor:  const Color(0xFFE3712E), // Button color
+        foregroundColor: Colors.white, // Text color
+      ),
+    ),
           primaryColor: const Color(0xFFE3712E),
           primaryColorDark: const Color(0xFF212121),
           primaryColorLight: const Color(0xFFE5E3E0),
           floatingActionButtonTheme: const FloatingActionButtonThemeData(
-              backgroundColor: Color(0xFFE3712E),
-              ),
+            backgroundColor: Color(0xFFE3712E),
+          ),
           appBarTheme: const AppBarTheme(
             backgroundColor: Color(0xFFE3712E),
             shadowColor: Colors.transparent,
@@ -103,9 +109,6 @@ class RegistrationScreen extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => LoginScreen()),
                 );
               },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blueAccent,
-              ),
               child: const Text('Register'),
             ),
           ],
@@ -169,9 +172,7 @@ class LoginScreen extends StatelessWidget {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () => _login(context),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blueAccent,
-              ),
+             
               child: const Text('Login'),
             ),
           ],
